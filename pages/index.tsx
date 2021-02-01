@@ -26,7 +26,7 @@ const IndexPage = () => (
                   </span>
                 </h1>
                 <p className="mt-6 text-2xl text-gray-700">
-                  We provide the design & development experience to help big
+                  We provide the design and development experience to help big
                   ideas reach their potential.
                 </p>
               </div>
@@ -90,7 +90,7 @@ const IndexPage = () => (
         <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
           <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
             <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
-              Fast & reliable websites
+              Fast and reliable websites
             </h2>
             <p className="mt-12 text-lg text-gray-700">
               We use the latest innovative technologies to build fast, secure
@@ -163,13 +163,13 @@ const IndexPage = () => (
           </div>
           <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0 order-1">
             <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
-              GraphQL and Apollo Federation
+              GraphQL + Apollo Federation
             </h2>
             <p className="mt-12 text-lg text-gray-700">
-              We have been building production system using GraphQL since before
-              it was officially released. We work with cutting edge technologies
-              like Apollo Federation to implement GraphQL schemas across
-              microservice architectures.
+              We have been building production systems using GraphQL since
+              before it was officially released. We work with cutting edge
+              technologies like Apollo Federation to implement GraphQL schemas
+              across microservice architectures.
             </p>
             <div
               className="mt-12 grid grid-cols-5 gap-8"
