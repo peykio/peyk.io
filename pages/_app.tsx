@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { NextSeo } from "next-seo";
 
 import "../styles/globals.css";
 
@@ -33,6 +34,23 @@ export default function App({ Component, pageProps }) {
         <meta name="msapplication-TileColor" content="#2b5797" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
+      <NextSeo
+        title="Peyk Inc."
+        description="Bridge the gap between idea and reality"
+        canonical="https://peyk.io"
+        openGraph={{
+          url: "https://peyk.io/",
+          title: "Peyk Inc.",
+          description: "Bridge the gap between idea and reality",
+          images: [{ url: "https://peyk.io/peyk_ico.png" }],
+          site_name: "Peyk",
+        }}
+        twitter={{
+          handle: "@handle",
+          site: "@site",
+          cardType: "summary_large_image",
+        }}
+      />
       <Component {...pageProps} />
     </>
   );
