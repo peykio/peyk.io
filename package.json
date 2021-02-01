@@ -11,7 +11,7 @@
     "start": "vercel dev"
   },
   "dependencies": {
-    "next": "^10.0.1",
+    "next": "^10.0.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
@@ -19,7 +19,7 @@
     "@types/react": "^17.0.0",
     "@typescript-eslint/eslint-plugin": "^4.14.1",
     "@typescript-eslint/parser": "^4.14.1",
-    "autoprefixer": "^10.2.3",
+    "autoprefixer": "^10.2.4",
     "eslint": "^7.18.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-prettier": "^3.3.1",
