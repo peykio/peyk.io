@@ -7,11 +7,6 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
-          rel="stylesheet"
-        />
         <link
           rel="apple-touch-icon"
           sizes="76x76"
