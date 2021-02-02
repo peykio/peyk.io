@@ -1,26 +1,26 @@
-import Image from "next/image";
-
 const IndexPage = () => (
   <div className="bg-white">
     <main>
       <div className="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-48">
-        <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+        <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
           <div>
-            <div className="flex items-center">
-              <div className="bg-purple-300 transform p-3 mr-3 rotate-12 rounded-md bg-gradient-to-r from-purple-600 to-purple-800 md:p-4 md:mr-4"></div>
-              <div className="text-2xl md:text-4xl tracking-widest font-logo">
-                PEYK
+            <div>
+              <div className="flex items-center">
+                <div className="bg-purple-300 transform p-3 mr-3 rotate-12 rounded-md bg-gradient-to-r from-purple-600 to-purple-800 md:p-4 md:mr-4"></div>
+                <div className="text-2xl md:text-4xl tracking-widest font-logo">
+                  PEYK
+                </div>
               </div>
             </div>
-            <div className="mt-12 md:mt-20">
-              <div className="sm:max-w-xl">
-                <h1 className="mt-4 text-4xl tracking-tight font-extrabold sm:mt-5 sm:text-6xl lg:mt-6 xl:text-5xl">
+            <div className="mt-20">
+              <div className="mt-6 sm:max-w-xl">
+                <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">
                   <span className="block">Bridge the gap between</span>
                   <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-indigo-800 block">
                     idea and reality
                   </span>
                 </h1>
-                <p className="mt-6 text-2xl text-gray-700">
+                <p className="mt-6 text-xl text-gray-700">
                   We provide the design and development experience to help big
                   ideas reach their potential.
                 </p>
@@ -67,23 +67,18 @@ const IndexPage = () => (
               </svg>
             </div>
             <div className="relative pl-4 -mr-40 sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-none lg:h-full lg:pl-12">
-              <div className="relative lg:h-full lg:w-auto lg:max-w-none">
-                <img
-                  width="980"
-                  height="489"
-                  src="/images/undraw_design_components_9vy6.svg"
-                  className="relative lg:h-full lg:w-auto lg:max-w-none"
-                  alt=""
-                />
-              </div>
+              <img
+                className="w-full lg:h-full lg:w-auto lg:max-w-none"
+                src="/images/undraw_design_components_9vy6.svg"
+                alt="Design components"
+              />
             </div>
           </div>
         </div>
       </div>
-
       <div className="relative pt-16">
-        <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-          <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
+        <div className="flex flex-wrap space-y-24 md:mx-auto md:max-w-7xl md:px-8 lg:space-y-0">
+          <div className="px-4 max-w-xl mx-auto sm:px-6 lg:w-1/2 lg:py-16">
             <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
               Fast and reliable websites
             </h2>
@@ -99,64 +94,57 @@ const IndexPage = () => (
             >
               <div className="col-span-1 flex justify-center">
                 <img
-                  className="h-8 md:h-12"
+                  className="h-10 lg:h-12"
                   src="/images/reactjs-icon.svg"
                   alt="React"
                 />
               </div>
               <div className="col-span-1 flex justify-center">
                 <img
-                  className="h-8 md:h-12"
+                  className="h-10 lg:h-12"
                   src="/images/zeit-icon.svg"
                   alt="Vercel"
                 />
               </div>
               <div className="col-span-1 flex justify-center">
                 <img
-                  className="h-8 md:h-12"
+                  className="h-10 lg:h-12"
                   src="/images/netlify-icon.svg"
                   alt="Netlify"
                 />
               </div>
               <div className="col-span-1 flex justify-center">
                 <img
-                  className="h-8 md:h-12"
+                  className="h-10 lg:h-12"
                   src="/images/gatsbyjs-icon.svg"
                   alt="Gatsby"
                 />
               </div>
               <div className="col-span-1 flex justify-center">
                 <img
-                  className="h-8 md:h-12"
+                  className="h-10 lg:h-12"
                   src="/images/tailwindcss.svg"
                   alt="Tailwind"
                 />
               </div>
             </div>
           </div>
-          <div className="mt-12 sm:mt-16 lg:mt-0">
-            <Image
-              width="1027"
-              height="696"
+          <div className="flex px-4 max-w-xl mx-auto sm:px-6 lg:w-1/2 lg:py-16">
+            <img
               src="/images/undraw_experience_design_eq3j.svg"
               alt="Fast and reliable websites"
+              className="self-center"
             />
           </div>
-        </div>
-      </div>
 
-      <div className="relative pt-16">
-        <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-          <div className="mt-12 sm:mt-16 lg:mt-0">
-            <Image
-              width="1177"
-              height="874"
+          <div className="flex px-4 max-w-xl mx-auto order-last sm:px-6 lg:w-1/2 lg:py-16 lg:order-none">
+            <img
               src="/images/undraw_connected_world_wuay.svg"
               alt="Federated data and distributed systems"
-              className="order-2"
+              className="self-center"
             />
           </div>
-          <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0 order-1">
+          <div className="px-4 max-w-xl mx-auto sm:px-6 lg:w-1/2 lg:py-16">
             <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
               GraphQL + Apollo Federation
             </h2>
@@ -172,35 +160,35 @@ const IndexPage = () => (
             >
               <div className="col-span-1 flex justify-center">
                 <img
-                  className="h-8 md:h-12"
+                  className="h-10 lg:h-12"
                   src="/images/amazon-web-services-2.svg"
                   alt="AWS"
                 />
               </div>
               <div className="col-span-1 flex justify-center">
                 <img
-                  className="h-8 md:h-12"
+                  className="h-10 lg:h-12"
                   src="/images/apollographql-icon.svg"
                   alt="Apollo"
                 />
               </div>
               <div className="col-span-1 flex justify-center">
                 <img
-                  className="h-8 md:h-12"
+                  className="h-10 lg:h-12"
                   src="/images/graphql-icon.svg"
                   alt="GraphQL"
                 />
               </div>
               <div className="col-span-1 flex justify-center">
                 <img
-                  className="h-8 md:h-12"
+                  className="h-10 lg:h-12"
                   src="/images/serverless-icon.svg"
                   alt="Serverless"
                 />
               </div>
               <div className="col-span-1 flex justify-center">
                 <img
-                  className="h-8 md:h-12"
+                  className="h-10 lg:h-12"
                   src="/images/prisma.svg"
                   alt="Prisma"
                 />
