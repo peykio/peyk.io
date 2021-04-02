@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        logo: ["Montserrat", ...defaultTheme.fontFamily.sans],
+        montserrat: ["Montserrat", ...defaultTheme.fontFamily.sans],
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
     },

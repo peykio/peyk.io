@@ -7,7 +7,7 @@ const IndexPage = () => (
             <div>
               <div className="flex items-center">
                 <div className="bg-purple-300 transform p-3 mr-3 rotate-12 rounded-md bg-gradient-to-r from-purple-600 to-purple-800 md:p-4 md:mr-4"></div>
-                <div className="text-2xl md:text-4xl tracking-widest font-logo">
+                <div className="text-2xl md:text-4xl tracking-widest font-montserrat">
                   PEYK
                 </div>
               </div>
