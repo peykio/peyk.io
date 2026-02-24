@@ -1,45 +1,41 @@
-# Sanity.io and Next.js Ecommerce Starter
+# Peyk.io
 
-This is an e-commerce *starter* that features a studio with a simple Next.js frontend.
+Static landing page for Peyk.
 
-This starter uses the [Next.js toolkit for Sanity.io](https://github.com/sanity-io/next-sanity).
+## Stack
 
-Note: This starter is an example of e-commerce content models and layout. It doesn't come with a full cart and fulfilmment solution. If you're interested in how to integrate Sanity with a e-commerce solution, do [join our community](https://slack.sanity.io).
+- Plain HTML + CSS
+- No framework
+- No JavaScript
 
-**Features:**
+## Project structure
 
-* Live previews, including website preview for products
-* Frontend with product pages styled using Tailwind.css
-* Content types for products, ads, pages, routes, popup shops, social media
+- `index.html` - page markup and SEO metadata
+- `styles.css` - all styles
+- `home-gallery.html` - links to inspiration builds
+- `home-blend-1.html` + `theme-blend-1.css` - trust-first consulting layout
+- `home-blend-2.html` + `theme-blend-2.css` - modular high-contrast layout
+- `home-blend-3.html` + `theme-blend-3.css` - human-centered collaborative layout
+- `public/` - fonts, icons, and image assets
 
-This starter comes with an intentionally sparse frontend for just products and super simple landing pages. The fun is building and tweaking it yourself?
+## Run locally
 
-## Getting started
+Use any static file server from the project root.
 
-The quickest way to get up and running is to go to https://www.sanity.io/create?template=sanity-io%2Fsanity-template-nextjs-ecommerce and create a new project by following the instructions there.
+Examples:
 
-## Enabling live preview
-
-You can append `?preview` to the landing pages, product pages and the products overview to enable preview mode when you are logged into your Sanity project. For example:
-
-`https://<your-project>.vercel.app/products/roji?preview`
-
-You can find the code for the in-studio preview over in `/studio/src/components/product`.
-
-## Running Locally
-
-To run locally, rename `.env.test` to `.env` and add your project ID from [manage.sanity.io](https://manage.sanity.io).
-
-If you have already set up deployments on Vercel, you can also do `vercel env pull` to copy environment variables to your development environment.
-
-NOTE: If your Vercel project is set up to use the Next.js framework preset, you'll have to go to the project settings under https://vercel.com and under Build & Develpment change the _development command_ to: `npm run dev`
-
-To start the development server:
 ```bash
-npm start
+python3 -m http.server 8080
 ```
-This will run the frontend at http://localhost:3000 and the Sanity Studio at http://localhost:3000/studio
 
-## Credits
+or
 
-The e-commerce frontend is built with Tailwind components by [khatabwedaa](https://tailwindcomponents.com/u/khatabwedaa).
+```bash
+npx serve .
+```
+
+Then open http://localhost:8080.
+
+## Deploy
+
+This repo can be deployed directly as a static site on Vercel.

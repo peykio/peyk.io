@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Peyk | AI-Driven Bioinformatics — Schematic</title>
+    <meta
+      name="description"
+      content="Schematic design direction for Peyk — blueprint meets live TUI bioinformatics tooling."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/theme-blend-17.css" />
+  </head>
+  <body>
+    <div class="sheet">
+      <!-- Edge marks -->
+      <div class="edge-marks" aria-hidden="true">
+        <div class="corner corner-tl"></div>
+        <div class="corner corner-tr"></div>
+        <div class="corner corner-bl"></div>
+        <div class="corner corner-br"></div>
+      </div>
+
+      <span class="coord coord-tl" aria-hidden="true">DWG PKY-2026-R2</span>
+      <span class="coord coord-br" aria-hidden="true">SCALE 1:1</span>
+
+      <!-- Header -->
+      <header class="topbar">
+        <a class="brand" href="/home-blend-17.html">PEYK</a>
+        <nav>
+          <a href="#tool">Live Tool</a>
+          <a href="#capabilities">Capabilities</a>
+          <a href="#process">Process</a>
+          <a class="email" href="mailto:hello@peyk.io">hello@peyk.io</a>
+        </nav>
+      </header>
+
+      <main>
+        <!-- Hero -->
+        <div class="hero-intro">
+          <p class="hero-label">Imagine your research pipeline as software.</p>
+          <h1>AI-driven research tools for bioinformatics teams.</h1>
+        </div>
+
+        <!-- ════════════════════════════════════════════════════════
+             THE TOOL — abstract AI research chat
+             ════════════════════════════════════════════════════════ -->
+        <div class="tool-window" id="tool">
+          <div class="tool-titlebar">
+            <span class="tool-dot" aria-hidden="true"></span>
+            <span class="tool-dot" aria-hidden="true"></span>
+            <span class="tool-dot" aria-hidden="true"></span>
+            <span class="tool-title">peyk — research assistant</span>
+          </div>
+
+          <div class="chat-thread">
+            <!-- User message 1 -->
+            <div class="msg msg-user">
+              <p>We have RNA-seq data from 200 tumor samples. Can you identify differentially expressed genes between responders and non-responders?</p>
+            </div>
+
+            <!-- AI response 1: text + chart -->
+            <div class="msg msg-ai">
+              <p>Found 847 differentially expressed genes (adjusted p &lt; 0.05). Here's expression across the top candidates:</p>
+              <div class="gen-chart" aria-hidden="true">
+                <div class="bar-col" style="--h: 25%"></div>
+                <div class="bar-col" style="--h: 48%"></div>
+                <div class="bar-col" style="--h: 72%"></div>
+                <div class="bar-col accent" style="--h: 94%"></div>
+                <div class="bar-col accent" style="--h: 87%"></div>
+                <div class="bar-col" style="--h: 55%"></div>
+                <div class="bar-col" style="--h: 38%"></div>
+                <div class="bar-col" style="--h: 62%"></div>
+              </div>
+              <p>Three genes show &gt;4-fold enrichment in responders. Want me to run pathway analysis on this cluster?</p>
+            </div>
+
+            <!-- User message 2 -->
+            <div class="msg msg-user">
+              <p>Yes, and cross-reference with known drug targets.</p>
+            </div>
+
+            <!-- AI response 2: text + table -->
+            <div class="msg msg-ai msg-streaming">
+              <p>Ran GO enrichment and mapped to DrugBank. Four candidates overlap with approved therapeutics:</p>
+              <div class="gen-table" aria-hidden="true">
+                <div class="gen-row"><span class="cell w35"></span><span class="cell w25"></span><span class="cell w20"></span><span class="dot green"></span></div>
+                <div class="gen-row"><span class="cell w30"></span><span class="cell w20"></span><span class="cell w25"></span><span class="dot green"></span></div>
+                <div class="gen-row"><span class="cell w25"></span><span class="cell w30"></span><span class="cell w15"></span><span class="dot amber"></span></div>
+                <div class="gen-row"><span class="cell w35"></span><span class="cell w15"></span><span class="cell w20"></span><span class="dot red"></span></div>
+              </div>
+              <p>Two targets have existing inhibitors in Phase II trials.<span class="cursor" aria-hidden="true"></span></p>
+            </div>
+          </div>
+
+          <div class="chat-input" aria-hidden="true">
+            <span class="input-prompt">&gt;</span>
+            <div class="input-bar"></div>
+          </div>
+        </div>
+        <!-- end tool window -->
+
+        <div class="tool-caption">
+          <span class="caption-label" aria-hidden="true">Fig. 1 —</span>
+          Ask a research question. Get analysis, visualizations, answers.
+          We build AI tools that understand your science and work the way
+          your team thinks.
+        </div>
+
+        <!-- ── Capabilities ── -->
+        <div class="section-label" id="capabilities">
+          <span>What We Build</span>
+        </div>
+
+        <div class="spec-grid">
+          <div class="spec-card">
+            <span class="spec-id">CAP-01</span>
+            <h3>AI/ML Pipeline Engineering</h3>
+            <p>
+              Machine learning models for genomic, proteomic, and clinical
+              data. Variant calling, sequence analysis, protein structure
+              prediction — deployed for production research.
+            </p>
+          </div>
+          <div class="spec-card">
+            <span class="spec-id">CAP-02</span>
+            <h3>Bioinformatics Platforms</h3>
+            <p>
+              End-to-end systems for managing and analyzing biological data
+              at research scale. Architecture your team can operate.
+            </p>
+          </div>
+          <div class="spec-card">
+            <span class="spec-id">CAP-03</span>
+            <h3>Research Software</h3>
+            <p>
+              Custom applications, visualizations, and interfaces that make
+              complex biological data accessible to researchers.
+            </p>
+          </div>
+        </div>
+
+        <!-- ── Process ── -->
+        <div class="section-label" id="process">
+          <span>Engagement Process</span>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-card">
+            <span class="process-num">Phase 1</span>
+            <h3>Domain Assessment</h3>
+            <p>
+              Map the research domain. Audit data types, existing tools, and
+              computational infrastructure. Define what needs to be built.
+            </p>
+          </div>
+          <div class="process-card">
+            <span class="process-num">Phase 2</span>
+            <h3>Embedded Development</h3>
+            <p>
+              Work alongside your researchers. Production code, ML models,
+              platform integration. Ship working tools iteratively.
+            </p>
+          </div>
+          <div class="process-card">
+            <span class="process-num">Phase 3</span>
+            <h3>Transfer</h3>
+            <p>
+              Documentation, training, full handoff. Your team owns and
+              operates everything.
+            </p>
+          </div>
+        </div>
+
+        <!-- ── CTA ── -->
+        <div class="cta-block">
+          <span class="crosshair ch-tl" aria-hidden="true"></span>
+          <span class="crosshair ch-tr" aria-hidden="true"></span>
+          <span class="crosshair ch-bl" aria-hidden="true"></span>
+          <span class="crosshair ch-br" aria-hidden="true"></span>
+          <h2>Need tools like this for your research?</h2>
+          <p>
+            Tell us about your data, your biological questions, and where
+            your current software falls short.
+          </p>
+          <a class="cta-link" href="mailto:hello@peyk.io">hello@peyk.io &rarr;</a>
+        </div>
+      </main>
+
+      <footer class="bp-footer">
+        <p>&copy; 2026 Peyk</p>
+        <a href="/home-gallery.html">All design directions</a>
+      </footer>
+    </div>
+  </body>
+</html>

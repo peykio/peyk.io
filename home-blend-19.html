@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Peyk | AI-Driven Bioinformatics — Bold Chat</title>
+    <meta
+      name="description"
+      content="Neo-brutalist design direction for Peyk with AI research chat."
+    />
+    <link rel="stylesheet" href="/theme-blend-19.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="site-header">
+        <a class="brand" href="/home-blend-19.html">PEYK</a>
+        <nav>
+          <a href="#tool">Demo</a>
+          <a href="#services">Services</a>
+          <a href="#how">How it works</a>
+          <a href="mailto:hello@peyk.io">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <h1>
+            Your research questions.
+            <span class="highlight">Our AI builds the answers.</span>
+          </h1>
+          <p class="intro">
+            AI-driven bioinformatics tools that understand your science.
+            Ask a question about your data. Get analysis, visualizations, and
+            answers you can act on.
+          </p>
+        </section>
+
+        <!-- ── Chat tool ── -->
+        <section class="chat-section" id="tool">
+          <div class="chat-window">
+            <div class="chat-bar">
+              <span class="chat-bar-dot"></span>
+              <span class="chat-bar-dot"></span>
+              <span class="chat-bar-dot"></span>
+              <span class="chat-bar-title">peyk — research assistant</span>
+            </div>
+
+            <div class="chat-thread">
+              <div class="msg msg-user">
+                <span class="msg-who">You</span>
+                <p>We have RNA-seq data from 200 tumor samples. Can you identify differentially expressed genes between responders and non-responders?</p>
+              </div>
+
+              <div class="msg msg-ai">
+                <span class="msg-who">Peyk</span>
+                <p>Found 847 differentially expressed genes (adjusted p &lt; 0.05). Here's expression across the top candidates:</p>
+                <div class="gen-chart" aria-hidden="true">
+                  <div class="bar-col" style="--h: 25%"></div>
+                  <div class="bar-col" style="--h: 48%"></div>
+                  <div class="bar-col" style="--h: 72%"></div>
+                  <div class="bar-col hi" style="--h: 94%"></div>
+                  <div class="bar-col hi" style="--h: 87%"></div>
+                  <div class="bar-col" style="--h: 55%"></div>
+                  <div class="bar-col" style="--h: 38%"></div>
+                  <div class="bar-col" style="--h: 62%"></div>
+                </div>
+                <p>Three genes show &gt;4-fold enrichment in responders. Want me to run pathway analysis on this cluster?</p>
+              </div>
+
+              <div class="msg msg-user">
+                <span class="msg-who">You</span>
+                <p>Yes, and cross-reference with known drug targets.</p>
+              </div>
+
+              <div class="msg msg-ai">
+                <span class="msg-who">Peyk</span>
+                <p>Ran GO enrichment and mapped to DrugBank. Four candidates overlap with approved therapeutics:</p>
+                <div class="gen-table" aria-hidden="true">
+                  <div class="gen-row"><span class="cell w35"></span><span class="cell w25"></span><span class="cell w20"></span><span class="dot green"></span></div>
+                  <div class="gen-row"><span class="cell w30"></span><span class="cell w20"></span><span class="cell w25"></span><span class="dot green"></span></div>
+                  <div class="gen-row"><span class="cell w25"></span><span class="cell w30"></span><span class="cell w15"></span><span class="dot amber"></span></div>
+                  <div class="gen-row"><span class="cell w35"></span><span class="cell w15"></span><span class="cell w20"></span><span class="dot red"></span></div>
+                </div>
+                <p>Two targets have existing inhibitors in Phase II trials.</p>
+              </div>
+            </div>
+
+            <div class="chat-input">
+              <span class="input-caret">&gt;</span>
+              <div class="input-field">Ask about your data...</div>
+            </div>
+          </div>
+
+          <p class="chat-caption">
+            Ask a research question. Get analysis, visualizations, answers.
+            We build AI tools that understand your science and work the way your team thinks.
+          </p>
+        </section>
+
+        <!-- ── Services ── -->
+        <section id="services" class="services">
+          <h2>What we actually build</h2>
+          <div class="services-grid">
+            <article class="service-box">
+              <h3>AI/ML pipelines</h3>
+              <p>
+                Machine learning models for genomic, proteomic, and clinical data.
+                Variant calling, sequence analysis, protein structure prediction —
+                deployed for production research.
+              </p>
+            </article>
+            <article class="service-box">
+              <h3>Bioinformatics platforms</h3>
+              <p>
+                End-to-end systems for managing and analyzing biological data at
+                research scale. Architecture your team can operate.
+              </p>
+            </article>
+            <article class="service-box">
+              <h3>Research software</h3>
+              <p>
+                Custom applications, visualizations, and interfaces that make
+                complex biological data accessible to researchers.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <!-- ── Process ── -->
+        <section id="how" class="how-it-works">
+          <h2>How it usually goes</h2>
+          <div class="timeline">
+            <article class="timeline-item">
+              <span class="when">First</span>
+              <div>
+                <h3>Domain assessment</h3>
+                <p>
+                  Map the research domain. Audit data types, existing tools,
+                  and computational infrastructure. Define what needs to be built.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <span class="when">Then</span>
+              <div>
+                <h3>Embedded development</h3>
+                <p>
+                  Work alongside your researchers. Production code, ML models,
+                  platform integration. Ship working tools iteratively.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <span class="when">Then</span>
+              <div>
+                <h3>Transfer</h3>
+                <p>
+                  Documentation, training, full handoff. Your team owns and
+                  operates everything.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- ── CTA ── -->
+        <section class="cta-section">
+          <div class="cta-box">
+            <h2>Need tools like this for your research?</h2>
+            <p>Tell us about your data, your biological questions, and where your current software falls short.</p>
+            <a class="btn-chunky" href="mailto:hello@peyk.io">hello@peyk.io</a>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2026 Peyk</p>
+        <a href="/home-gallery.html">All design directions</a>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,204 @@
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/public/fonts/Montserrat/montserrat-v15-latin-600.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  src: url("/public/fonts/Inter/Inter-VariableFont_slnt-wght.woff2")
+    format("woff2");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", system-ui, sans-serif;
+  color: #000;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Fixed header with blend-mode trick ── */
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 2rem;
+  mix-blend-mode: difference;
+  color: #fff;
+}
+
+.topbar a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.82rem;
+  letter-spacing: 0.22em;
+}
+
+/* ── Panels ── */
+
+.panel {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 6rem 2rem;
+}
+
+.panel-inner {
+  width: min(100%, 1200px);
+  margin: 0 auto;
+}
+
+.panel-light {
+  background: #fff;
+  color: #000;
+}
+
+.panel-dark {
+  background: #0a0a0a;
+  color: #fff;
+}
+
+/* ── Typography ── */
+
+.display {
+  font-size: clamp(2.8rem, 8vw, 9rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+}
+
+.display-sm {
+  font-size: clamp(1.6rem, 4vw, 4rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+}
+
+.body-text {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  line-height: 1.6;
+  max-width: 50ch;
+  font-weight: 400;
+}
+
+.panel-dark .body-text {
+  color: #888;
+}
+
+.panel-light .body-text {
+  color: #666;
+}
+
+.spacer {
+  margin-top: 1.75rem;
+}
+
+/* ── Email link ── */
+
+.email-link {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  font-size: clamp(1.5rem, 4vw, 3.5rem);
+  letter-spacing: -0.02em;
+  font-weight: 600;
+  border-bottom: 3px solid currentColor;
+  padding-bottom: 0.1em;
+  transition: opacity 180ms;
+}
+
+.email-link:hover {
+  opacity: 0.5;
+}
+
+/* ── Services list ── */
+
+.services-list {
+  list-style: none;
+  padding: 0;
+}
+
+.services-list li {
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  letter-spacing: -0.01em;
+}
+
+.services-list li:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* ── Footer ── */
+
+footer {
+  padding: 1.5rem 2rem;
+  font-size: 0.8rem;
+  color: #999;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer a {
+  color: #999;
+  text-decoration: none;
+  transition: color 180ms;
+}
+
+footer a:hover {
+  color: #000;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 768px) {
+  .panel {
+    min-height: auto;
+    padding: 4rem 1.5rem;
+  }
+
+  .topbar {
+    padding: 1rem 1.5rem;
+  }
+
+  footer {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 540px) {
+  footer {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

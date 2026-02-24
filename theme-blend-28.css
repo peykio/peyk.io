@@ -1,0 +1,520 @@
+/* ══════════════════════════════════════════════
+   PEYK — Chalk (Bold Topology variant)
+   Pastel accents on textured warm cream
+   Outfit + Karla, pastel-filled service cards
+   ══════════════════════════════════════════════ */
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Karla:wght@400;600;700&display=swap");
+
+:root {
+  --bg: #faf7f2;
+  --ink: #3a3535;
+  --orange: #f0b494;
+  --blue: #8ea8c8;
+  --yellow: #f5e2a0;
+  --border: 3px solid var(--ink);
+  --shadow: 5px 5px 0 var(--ink);
+  --shadow-sm: 3px 3px 0 var(--ink);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Karla", system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  position: relative;
+}
+
+/* ── Subtle paper grain texture ── */
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.3;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  z-index: 9999;
+}
+
+.wrap {
+  width: min(calc(100% - 2rem), 1080px);
+  margin: 0 auto;
+  position: relative;
+}
+
+/* ── Header ── */
+
+.site-header {
+  border-bottom: var(--border);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.25em;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--yellow);
+  padding: 0.3rem 0.75rem;
+  border: 2px solid var(--ink);
+  box-shadow: var(--shadow-sm);
+  transition:
+    transform 100ms,
+    box-shadow 100ms;
+}
+
+.brand:hover {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0 var(--ink);
+}
+
+.site-header nav {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.site-header nav a {
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.25rem 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 150ms;
+}
+
+.site-header nav a:hover {
+  border-color: var(--orange);
+}
+
+/* ── Hero ── */
+
+.hero {
+  padding: 4rem 0 3.5rem;
+  border-bottom: var(--border);
+}
+
+.hero h1 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: clamp(2.2rem, 5.5vw, 4.5rem);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  max-width: 18ch;
+}
+
+.highlight {
+  background: var(--yellow);
+  padding: 0 0.12em;
+  display: inline;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.hero .intro {
+  margin-top: 1.25rem;
+  font-size: 1.08rem;
+  max-width: 52ch;
+
+  line-height: 1.6;
+}
+
+/* ══════════════════════════════════════════════
+   ABSTRACT VISUALIZATION — soft pastel
+   ══════════════════════════════════════════════ */
+
+.viz-section {
+  padding: 3rem 0;
+  border-bottom: var(--border);
+}
+
+.abstract {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: var(--border);
+  box-shadow: 8px 8px 0 var(--ink);
+  background: var(--bg);
+}
+
+/* ── Soft flowing curves ── */
+
+.curve {
+  stroke: var(--ink);
+  stroke-width: 3;
+  fill: none;
+}
+
+.c1 {
+  opacity: 0.1;
+}
+
+.c2 {
+  opacity: 0.07;
+  stroke-width: 2.5;
+  stroke: var(--orange);
+}
+
+.c3 {
+  opacity: 0.12;
+  stroke-width: 2;
+  stroke: var(--blue);
+}
+
+.c4 {
+  opacity: 0.08;
+  stroke-width: 1.5;
+  stroke: var(--yellow);
+}
+
+/* ── Connecting lines ── */
+
+.conns line {
+  stroke: var(--ink);
+  stroke-width: 1.5;
+  opacity: 0.08;
+}
+
+/* ── Pastel hub nodes ── */
+
+.hub-sq {
+  stroke: var(--ink);
+  stroke-width: 2;
+}
+
+.hub-sq.orange {
+  fill: var(--orange);
+}
+
+.hub-sq.blue {
+  fill: var(--blue);
+}
+
+.hub-sq.yellow {
+  fill: var(--yellow);
+}
+
+/* ── Circle secondary nodes ── */
+
+.node-circ {
+  fill: var(--orange);
+  stroke: var(--ink);
+  stroke-width: 2;
+  opacity: 0.3;
+}
+
+.node-circ.sm {
+  fill: var(--ink);
+  stroke: none;
+  opacity: 0.1;
+}
+
+/* ── Accent blocks ── */
+
+.block {
+  stroke: var(--ink);
+  stroke-width: 1.5;
+}
+
+.block.orange {
+  fill: var(--orange);
+}
+
+.block.blue {
+  fill: var(--blue);
+}
+
+.block.yellow {
+  fill: var(--yellow);
+}
+
+/* ── Small particles ── */
+
+.dot-sq {
+  fill: var(--ink);
+  opacity: 0.06;
+}
+
+/* ── Viz caption ── */
+
+.viz-caption {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* ── Buttons ── */
+
+.btn-chunky {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  background: var(--orange);
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 0.92rem;
+  padding: 0.75rem 1.25rem;
+  border: var(--border);
+  box-shadow: var(--shadow);
+  transition:
+    transform 100ms,
+    box-shadow 100ms;
+}
+
+.btn-chunky:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 3px 3px 0 var(--ink);
+}
+
+.btn-chunky:active {
+  transform: translate(5px, 5px);
+  box-shadow: 0 0 0 var(--ink);
+}
+
+/* ── Services — pastel-filled cards ── */
+
+.services {
+  padding: 3.5rem 0;
+  border-bottom: var(--border);
+}
+
+.services h2 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.service-box {
+  border: var(--border);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  position: relative;
+  transition:
+    transform 150ms,
+    box-shadow 150ms;
+}
+
+.service-box:nth-child(1) {
+  background: var(--orange);
+}
+
+.service-box:nth-child(2) {
+  background: var(--blue);
+}
+
+.service-box:nth-child(3) {
+  background: var(--yellow);
+}
+
+.service-box:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 3px 3px 0 var(--ink);
+}
+
+.service-box::before {
+  display: none;
+}
+
+.service-box h3 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-box p {
+  color: var(--ink);
+  font-size: 0.9rem;
+  line-height: 1.55;
+  opacity: 0.75;
+}
+
+/* ── Process cards ── */
+
+.how-it-works {
+  padding: 3.5rem 0;
+  border-bottom: var(--border);
+}
+
+.how-it-works h2 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.process-card {
+  border: var(--border);
+  padding: 1.5rem;
+  padding-top: calc(1.5rem + 6px);
+  background: var(--bg);
+  box-shadow: var(--shadow);
+  position: relative;
+  transition:
+    transform 150ms,
+    box-shadow 150ms;
+}
+
+.process-card:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 3px 3px 0 var(--ink);
+}
+
+.process-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: var(--orange);
+}
+
+.process-card:nth-child(2)::before {
+  background: var(--blue);
+}
+.process-card:nth-child(3)::before {
+  background: var(--yellow);
+}
+
+.process-num {
+  display: block;
+  font-family: "Outfit", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #c88a6a;
+  margin-bottom: 0.4rem;
+}
+
+.process-card:nth-child(2) .process-num {
+  color: #6888a8;
+}
+.process-card:nth-child(3) .process-num {
+  color: #b8a860;
+}
+
+.process-card h3 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.process-card p {
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+/* ── CTA ── */
+
+.cta-section {
+  padding: 3.5rem 0 4rem;
+  text-align: center;
+}
+
+.cta-box {
+  border: var(--border);
+  background: var(--blue);
+  padding: 3rem;
+  box-shadow: 8px 8px 0 var(--ink);
+}
+
+.cta-box h2 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  margin-bottom: 0.5rem;
+}
+
+.cta-box p {
+  margin-bottom: 1.5rem;
+}
+
+.cta-box .btn-chunky {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+/* ── Footer ── */
+
+footer {
+  border-top: var(--border);
+  padding: 1.2rem 0 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+}
+
+footer a {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 768px) {
+  .services-grid,
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-box {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .site-header nav {
+    gap: 0.75rem;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.001ms !important;
+  }
+}

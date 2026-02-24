@@ -1,0 +1,414 @@
+/* ═══════════════════════════════════════════════
+   Theme 15 — Paper
+   Academic journal / scientific paper
+   Font: EB Garamond 400, 400i, 700
+   ═══════════════════════════════════════════════ */
+
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --accent: #2c5aa0;
+  --note: #8b7355;
+  --rule: #c4c4c4;
+  --aside-bg: #f8f6f2;
+  --measure: 38em;
+  --paper-width: 50rem;
+}
+
+/* ── Reset ── */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* ── Base Typography ── */
+
+body {
+  font-family: "EB Garamond", "Georgia", "Times New Roman", serif;
+  font-size: 1.125rem;
+  line-height: 1.72;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  hanging-punctuation: first allow-end last;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ── Running Header ── */
+
+.running-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg);
+  padding: 0.75rem 2rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.running-header p {
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+  font-size: 0.82rem;
+  color: var(--text);
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* ── Paper Container ── */
+
+.paper {
+  width: min(calc(100% - 4rem), var(--paper-width));
+  margin: 0 auto;
+  padding: 3.5rem 0 4rem;
+  animation: paperFadeIn 800ms ease both;
+}
+
+/* ── Title Block ── */
+
+.title-block {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.title-block h1 {
+  font-size: clamp(1.6rem, 4vw, 2.25rem);
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  max-width: 22ch;
+  margin: 0 auto;
+}
+
+.title-block .authors {
+  margin-top: 1rem;
+  font-size: 1.05rem;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+  color: var(--text);
+}
+
+.title-block .date {
+  margin-top: 0.25rem;
+  font-size: 0.92rem;
+  color: #666;
+  font-style: italic;
+}
+
+/* ── Abstract ── */
+
+.abstract {
+  margin: 0 auto 2.5rem;
+  max-width: var(--measure);
+  padding: 1.5rem 1.5rem 1.5rem 1.75rem;
+  border-left: 3px solid var(--accent);
+  background: var(--aside-bg);
+}
+
+.abstract-label {
+  font-variant: small-caps;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.abstract p:last-child {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #333;
+}
+
+/* ── Sections ── */
+
+section {
+  margin-bottom: 2.25rem;
+  max-width: var(--measure);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--rule);
+  line-height: 1.3;
+}
+
+section h3 {
+  font-size: 1.08rem;
+  font-weight: 700;
+  margin-top: 1.25rem;
+  margin-bottom: 0.3rem;
+  line-height: 1.35;
+}
+
+section > p {
+  margin-bottom: 0.85rem;
+}
+
+/* ── Two-Column Layout (Services) ── */
+
+.two-col {
+  columns: 2;
+  column-gap: 2.5rem;
+  column-rule: 1px solid var(--rule);
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.two-col h3 {
+  break-after: avoid;
+  margin-top: 0;
+}
+
+.two-col h3:not(:first-child) {
+  margin-top: 1.25rem;
+}
+
+.two-col p {
+  break-inside: avoid;
+  margin-bottom: 0;
+}
+
+/* ── Figure / Table Labels ── */
+
+.figure-label {
+  font-size: 0.88rem;
+  color: #666;
+  margin-top: 0.5rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.figure-label em {
+  font-style: italic;
+}
+
+/* ── Methodology Blocks with Margin Notes ── */
+
+.methodology-block {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.methodology-block h3 {
+  margin-top: 1.5rem;
+}
+
+.methodology-block p {
+  margin-bottom: 0.85rem;
+}
+
+/* ── Margin Notes ── */
+
+.margin-note {
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--note);
+  font-style: italic;
+  max-width: 14em;
+  position: absolute;
+  right: -16em;
+  top: 2.5rem;
+  padding-left: 0.75rem;
+  border-left: 2px solid var(--rule);
+}
+
+.margin-note::before {
+  content: "\2020\2003";
+  font-style: normal;
+}
+
+/* ── Contact Section ── */
+
+.contact-address {
+  margin-top: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.contact-address a {
+  color: var(--accent);
+  font-style: italic;
+}
+
+.contact-address a:hover {
+  text-decoration: underline;
+}
+
+/* ── Section Rule ── */
+
+.section-rule {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 2rem auto;
+  max-width: var(--measure);
+}
+
+/* ── Footnotes ── */
+
+.footnotes {
+  max-width: var(--measure);
+  margin: 0 auto 2rem;
+  padding-top: 0.5rem;
+}
+
+.footnotes-label {
+  font-variant: small-caps;
+  font-weight: 700;
+  font-size: 0.92rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.5rem;
+}
+
+.footnotes ol {
+  padding-left: 1.5rem;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.footnotes ol li {
+  margin-bottom: 0.3rem;
+  padding-left: 0.25rem;
+}
+
+.footnotes ol li::marker {
+  font-size: 0.82rem;
+  color: var(--text);
+}
+
+/* ── Footer ── */
+
+.site-footer {
+  max-width: var(--paper-width);
+  width: min(calc(100% - 4rem), var(--paper-width));
+  margin: 0 auto;
+  padding: 1.25rem 0 3rem;
+  border-top: 1px solid var(--rule);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.82rem;
+  color: #888;
+}
+
+.site-footer a {
+  color: var(--accent);
+  font-size: 0.82rem;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ── Animation ── */
+
+@keyframes paperFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ── Responsive: Tablet ── */
+
+@media (max-width: 768px) {
+  .paper {
+    width: min(calc(100% - 3rem), var(--paper-width));
+  }
+
+  .two-col {
+    columns: 1;
+    column-rule: none;
+  }
+
+  .margin-note {
+    position: static;
+    max-width: none;
+    right: auto;
+    top: auto;
+    margin: 0.75rem 0 1rem;
+    padding: 0.75rem 1rem;
+    border-left: 2px solid var(--rule);
+    background: var(--aside-bg);
+    font-size: 0.85rem;
+  }
+
+  .site-footer {
+    width: min(calc(100% - 3rem), var(--paper-width));
+  }
+}
+
+/* ── Responsive: Mobile ── */
+
+@media (max-width: 480px) {
+  body {
+    font-size: 1.05rem;
+  }
+
+  .running-header {
+    padding: 0.6rem 1.25rem;
+  }
+
+  .running-header p {
+    font-size: 0.72rem;
+  }
+
+  .paper {
+    width: min(calc(100% - 2rem), var(--paper-width));
+    padding: 2.5rem 0 3rem;
+  }
+
+  .title-block {
+    margin-bottom: 2rem;
+  }
+
+  .title-block h1 {
+    font-size: 1.5rem;
+  }
+
+  .abstract {
+    padding: 1rem 1rem 1rem 1.25rem;
+  }
+
+  section h2 {
+    font-size: 1.2rem;
+  }
+
+  .site-footer {
+    width: min(calc(100% - 2rem), var(--paper-width));
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+}
+
+/* ── Reduced Motion ── */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

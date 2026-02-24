@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Peyk | AI-Driven Bioinformatics — Terminal</title>
+    <meta
+      name="description"
+      content="Terminal TUI design direction for Peyk — AI-driven bioinformatics research tools presented as a text user interface."
+    />
+    <link rel="stylesheet" href="/theme-blend-7.css" />
+  </head>
+  <body>
+    <div class="crt-screen">
+      <div class="terminal">
+        <!-- ── Window chrome ── -->
+        <div class="window-bar">
+          <span class="window-title">peyk@bio — bash — 120x40</span>
+          <span class="window-controls" aria-hidden="true">[ _ ][ ☐ ][ x ]</span>
+        </div>
+
+        <!-- ── Menu bar ── -->
+        <nav class="menu-bar">
+          <a href="/home-blend-7.html" class="menu-item active">Home</a>
+          <a href="#services" class="menu-item">Services</a>
+          <a href="#process" class="menu-item">Process</a>
+          <a href="mailto:hello@peyk.io" class="menu-item">Contact</a>
+        </nav>
+
+        <main class="tui-body">
+          <!-- ── Hero panel ── -->
+          <div class="panel">
+            <div class="panel-header">
+              <span class="panel-title"> PEYK — AI-Driven Bioinformatics </span>
+            </div>
+            <div class="panel-body hero-panel">
+              <pre class="ascii-logo" aria-label="Peyk">
+ ____  _____ __ __ _  __
+|  _ \| ____|\ \/ /| |/ /
+| |_) |  _|   \  / | ' /
+|  __/| |___  /  \ | . \
+|_|   |_____|/_/\_\|_|\_\</pre>
+              <p class="hero-text">
+                We build AI-driven research software for bioinformatics
+                teams. ML pipelines for genomics and proteomics. Data
+                platforms for biological discovery. Tools that move from
+                notebook to production.
+              </p>
+              <div class="hero-prompt">
+                <span class="prompt">user@lab:~$</span> <a href="mailto:hello@peyk.io" class="cmd-link">mail hello@peyk.io</a><span class="cursor" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Services panel ── -->
+          <div class="panel" id="services">
+            <div class="panel-header">
+              <span class="panel-title"> What We Build </span>
+            </div>
+            <div class="panel-body">
+              <div class="tui-table">
+                <div class="tui-row tui-row-header">
+                  <span class="tui-cell cell-id">ID</span>
+                  <span class="tui-cell cell-name">SERVICE</span>
+                  <span class="tui-cell cell-desc">DESCRIPTION</span>
+                </div>
+                <div class="tui-row">
+                  <span class="tui-cell cell-id">[1]</span>
+                  <span class="tui-cell cell-name">AI/ML Pipelines</span>
+                  <span class="tui-cell cell-desc">Machine learning models for genomic, proteomic, and clinical data. Variant calling, sequence analysis, predictive modeling — deployed for production research.</span>
+                </div>
+                <div class="tui-row">
+                  <span class="tui-cell cell-id">[2]</span>
+                  <span class="tui-cell cell-name">Bio Platforms</span>
+                  <span class="tui-cell cell-desc">End-to-end systems for managing and analyzing biological data at scale. Architecture your team can operate.</span>
+                </div>
+                <div class="tui-row">
+                  <span class="tui-cell cell-id">[3]</span>
+                  <span class="tui-cell cell-name">Research Software</span>
+                  <span class="tui-cell cell-desc">Custom tools, visualizations, and interfaces that make complex biological data accessible to researchers.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Process panel ── -->
+          <div class="panel" id="process">
+            <div class="panel-header">
+              <span class="panel-title"> How Engagements Work </span>
+            </div>
+            <div class="panel-body">
+              <div class="tui-steps">
+                <div class="tui-step">
+                  <div class="step-header">
+                    <span class="step-radio" aria-hidden="true">(&#x25CF;)</span>
+                    <span class="step-label">Understand the science</span>
+                  </div>
+                  <p class="step-desc">
+                    Learn your research domain. Review existing pipelines,
+                    data architecture, and tooling. Identify where software
+                    is limiting discovery.
+                  </p>
+                </div>
+                <div class="step-connector" aria-hidden="true">  │</div>
+                <div class="tui-step">
+                  <div class="step-header">
+                    <span class="step-radio" aria-hidden="true">(&#x25CF;)</span>
+                    <span class="step-label">Build with your team</span>
+                  </div>
+                  <p class="step-desc">
+                    Embedded engineering alongside your researchers.
+                    Production code, ML model deployment, platform
+                    integration. We ship working tools.
+                  </p>
+                </div>
+                <div class="step-connector" aria-hidden="true">  │</div>
+                <div class="tui-step">
+                  <div class="step-header">
+                    <span class="step-radio" aria-hidden="true">(&#x25CF;)</span>
+                    <span class="step-label">Hand it over</span>
+                  </div>
+                  <p class="step-desc">
+                    Documentation, training, knowledge transfer. Your team
+                    owns everything. The momentum continues.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── CTA panel ── -->
+          <div class="panel panel-highlight">
+            <div class="panel-header">
+              <span class="panel-title"> Contact </span>
+            </div>
+            <div class="panel-body cta-panel">
+              <p>Research bottlenecked by software?</p>
+              <p class="cta-sub">Tell us where your tools are limiting the science.</p>
+              <div class="cta-prompt">
+                <span class="prompt">user@lab:~$</span> <a href="mailto:hello@peyk.io" class="cmd-link">mail hello@peyk.io</a><span class="cursor" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <!-- ── Status bar ── -->
+        <div class="status-bar" aria-hidden="true">
+          <span>INS</span>
+          <span>peyk.io</span>
+          <span>UTF-8</span>
+          <span>LF</span>
+          <span class="status-right">Ln 1, Col 1</span>
+        </div>
+
+        <!-- ── Footer ── -->
+        <footer class="tui-footer">
+          <span>&copy; 2026 Peyk</span>
+          <span class="footer-sep" aria-hidden="true">│</span>
+          <a href="/home-gallery.html">All design directions</a>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
