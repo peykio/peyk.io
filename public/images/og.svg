@@ -1,0 +1,55 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#faf7f2"/>
+
+  <!-- Top accent bar -->
+  <rect y="0" width="1200" height="12" fill="#ffa878"/>
+
+  <!-- Bottom accent bar -->
+  <rect y="618" width="1200" height="12" fill="#7fb4e0"/>
+
+  <!-- Logo: overlapping squares -->
+  <rect x="100" y="200" width="90" height="90" fill="#ffa878" stroke="#3a3535" stroke-width="4"/>
+  <rect x="68" y="168" width="90" height="90" fill="#ffe480" stroke="#3a3535" stroke-width="4"/>
+
+  <!-- Brand name -->
+  <text x="220" y="268" font-family="system-ui, sans-serif" font-weight="600" font-size="56" letter-spacing="0.25em" fill="#3a3535">PEYK</text>
+
+  <!-- Tagline -->
+  <text x="100" y="360" font-family="monospace" font-size="30" fill="#3a3535" opacity="0.7">Research software for bioinformatics teams.</text>
+
+  <!-- Decorative blocks (right side) -->
+  <!-- Processing block -->
+  <rect x="975" y="180" width="120" height="140" fill="#7fb4e0" stroke="#3a3535" stroke-width="2.5"/>
+  <rect x="992" y="202" width="40" height="4" fill="#3a3535" opacity="0.25"/>
+  <line x1="992" y1="216" x2="1078" y2="216" stroke="#3a3535" stroke-width="1" opacity="0.1"/>
+  <rect x="992" y="228" width="86" height="16" fill="rgba(250,247,242,0.4)" stroke="#3a3535" stroke-width="1.5"/>
+  <rect x="1000" y="234" width="30" height="3" fill="#3a3535" opacity="0.15"/>
+  <rect x="992" y="252" width="86" height="16" fill="rgba(250,247,242,0.4)" stroke="#3a3535" stroke-width="1.5"/>
+  <rect x="1000" y="258" width="40" height="3" fill="#3a3535" opacity="0.15"/>
+  <rect x="992" y="282" width="86" height="6" fill="rgba(250,247,242,0.3)" stroke="#3a3535" stroke-width="1"/>
+  <rect x="992" y="282" width="60" height="6" fill="#ffe480" stroke="#3a3535" stroke-width="1"/>
+
+  <!-- Output block -->
+  <rect x="975" y="360" width="120" height="70" fill="#ffe480" stroke="#3a3535" stroke-width="2.5"/>
+  <rect x="992" y="380" width="35" height="4" fill="#3a3535" opacity="0.25"/>
+  <rect x="992" y="392" width="70" height="3" fill="#3a3535" opacity="0.12"/>
+  <rect x="992" y="400" width="55" height="3" fill="#3a3535" opacity="0.12"/>
+
+  <!-- Arrow to output -->
+  <line x1="1035" y1="320" x2="1035" y2="350" stroke="#3a3535" stroke-width="2" opacity="0.12"/>
+  <polygon points="1030,350 1040,350 1035,360" fill="#3a3535" opacity="0.2"/>
+
+  <!-- Subtle dots -->
+  <circle cx="920" cy="310" r="3" fill="#3a3535" opacity="0.1"/>
+  <circle cx="940" cy="370" r="3" fill="#3a3535" opacity="0.08"/>
+
+  <!-- Dust -->
+  <rect x="750" y="430" width="5" height="5" fill="#3a3535" opacity="0.06"/>
+  <rect x="1120" y="130" width="5" height="5" fill="#3a3535" opacity="0.08"/>
+
+  <!-- Bottom-left accent blocks -->
+  <rect x="100" y="480" width="45" height="6" fill="#ffa878" stroke="#3a3535" stroke-width="1.5"/>
+  <rect x="160" y="480" width="50" height="6" fill="#7fb4e0" stroke="#3a3535" stroke-width="1.5"/>
+  <rect x="225" y="480" width="40" height="6" fill="#ffe480" stroke="#3a3535" stroke-width="1.5"/>
+</svg>
