@@ -1,4 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Noto+Sans+Mono:wght@300;400;500;600&display=swap");
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("/public/fonts/BricolageGrotesque/bricolage-grotesque-latin-variable.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Noto Sans Mono";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/public/fonts/NotoSansMono/noto-sans-mono-latin-variable.woff2")
+    format("woff2");
+}
 
 @font-face {
   font-family: "Montserrat";
@@ -17,7 +33,7 @@
   --yellow: #ffe480;
   --border: 3px solid var(--ink);
   --shadow: 5px 5px 0 var(--ink);
-  --shadow-sm: 3px 3px 0 var(--ink);
+
   --section-gap: 3.5rem;
   --font-display: "Bricolage Grotesque", system-ui, sans-serif;
   --font-body: "Noto Sans Mono", "SF Mono", monospace;
@@ -70,19 +86,6 @@ h2 {
 h3 {
   font-size: 1.05rem;
   margin-bottom: 0.75rem;
-}
-
-/* ── Subtle paper grain texture ── */
-
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.3;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
-  background-size: 200px 200px;
-  z-index: 9999;
 }
 
 .wrap {
@@ -158,19 +161,6 @@ main {
   margin-bottom: 2.5rem;
 }
 
-.hero-chip {
-  display: inline-block;
-  font-family: var(--font-body);
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  border: var(--border);
-  padding: 0.35rem 0.75rem;
-  margin-bottom: 1.25rem;
-  background: var(--yellow);
-}
-
 .hero-split {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -212,42 +202,6 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-/* ── Buttons ── */
-
-.btn-chunky {
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-  background: var(--orange);
-  color: var(--ink);
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 0.95rem;
-  padding: 0.75rem 1.25rem;
-  border: var(--border);
-  box-shadow: var(--shadow);
-  transition:
-    transform 100ms,
-    box-shadow 100ms;
-}
-
-.btn-chunky:hover {
-  transform: translate(2px, 2px);
-  box-shadow: 3px 3px 0 var(--ink);
-}
-
-.btn-chunky:active {
-  transform: translate(5px, 5px);
-  box-shadow: 0 0 0 var(--ink);
-}
-
-.hero-actions {
-  margin-top: 2rem;
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
 }
 
 /* ── Services — pastel-filled cards with depth ── */
@@ -320,10 +274,6 @@ main {
 }
 
 /* ── Case Study ── */
-
-.case-study {
-  padding: 0;
-}
 
 .case-split {
   display: grid;
@@ -437,20 +387,7 @@ main {
   opacity: 0.85;
 }
 
-.cta-box .btn-chunky {
-  background: var(--blue);
-}
-
 /* ── Footer ── */
-
-.footer-note {
-  font-family: var(--font-body);
-  font-size: 0.75rem;
-  color: var(--ink);
-  opacity: 0.5;
-  text-align: center;
-  margin-top: 1.5rem;
-}
 
 footer.cta-section {
   padding: var(--section-gap) 0;
