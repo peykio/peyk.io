@@ -6,15 +6,6 @@
   },
   "headers": [
     {
-      "source": "/public/fonts/Inter/Inter-VariableFont_slnt-wght.woff2",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    },
-    {
       "source": "/public/fonts/Montserrat/montserrat-v15-latin-600.woff2",
       "headers": [
         {

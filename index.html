@@ -3,34 +3,109 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Peyk | AI-Driven Bioinformatics</title>
+    <meta
+      name="description"
+      content="Peyk builds research software for bioinformatics teams. Data platforms, clinical tooling, and LLM integrations that turn biological data into usable science."
+    />
+    <title>Peyk | Research Software for Bioinformatics</title>
+
+    <!-- OG + Twitter Card -->
+    <meta
+      property="og:title"
+      content="Peyk | Research Software for Bioinformatics"
+    />
+    <meta
+      property="og:description"
+      content="Peyk builds research software for bioinformatics teams. Data platforms, clinical tooling, and LLM integrations."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://peyk.io" />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Peyk | Research Software for Bioinformatics"
+    />
+    <meta
+      name="twitter:description"
+      content="Research software for bioinformatics teams."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="/public/fonts/Montserrat/montserrat-v15-latin-600.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='7' y='7' width='16' height='16' fill='%23ffa878' stroke='%233a3535' stroke-width='2'/%3E%3Crect x='1' y='1' width='16' height='16' fill='%23ffe480' stroke='%233a3535' stroke-width='2'/%3E%3C/svg%3E"
+    />
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <div class="wrap">
       <header class="site-header">
         <div class="brand-group">
-          <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="flex-shrink: 0;">
-            <rect x="7" y="7" width="16" height="16" fill="var(--orange)" stroke="var(--ink)" stroke-width="3" />
-            <rect x="1.5" y="1.5" width="16" height="16" fill="var(--yellow)" stroke="var(--ink)" stroke-width="3" />
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            aria-label="Peyk logo"
+            role="img"
+            style="flex-shrink: 0"
+          >
+            <rect
+              x="7"
+              y="7"
+              width="16"
+              height="16"
+              fill="var(--orange)"
+              stroke="var(--ink)"
+              stroke-width="3"
+            />
+            <rect
+              x="1.5"
+              y="1.5"
+              width="16"
+              height="16"
+              fill="var(--yellow)"
+              stroke="var(--ink)"
+              stroke-width="3"
+            />
           </svg>
           <span class="brand">PEYK</span>
         </div>
+        <nav class="site-nav">
+          <a href="#services">Services</a>
+          <a href="#how">Process</a>
+        </nav>
       </header>
 
       <main>
         <section class="hero">
-          <h1>
-            AI-driven research tools for
-            <span class="highlight">bioinformatics teams.</span>
-          </h1>
-          <p class="intro">
-            We build software for labs and research teams. ML pipelines, data
-            platforms, analysis tools. The hard infrastructure that turns
-            biological data into usable science.
-          </p>
-          <div class="hero-actions">
-            <a class="btn-chunky" href="mailto:hello@peyk.io">Talk to us</a>
+          <div class="accent-bar"></div>
+          <div class="hero-split">
+            <div class="hero-content">
+              <h1>
+                Research software for
+                <span class="highlight">bioinformatics teams.</span>
+              </h1>
+              <p class="intro">
+                We build the infrastructure behind research programs. Data
+                platforms, clinical tooling, validation systems, and LLM
+                integrations for teams working with biological and clinical
+                data.
+              </p>
+            </div>
+            <div class="hero-visual">
+              <img class="abstract" src="/public/svg/hero-pipeline.svg" alt="" aria-hidden="true" />
+            </div>
           </div>
         </section>
 
@@ -39,212 +114,141 @@
           <h2>What we build</h2>
           <div class="services-grid">
             <article class="service-box">
-              <h3>AI/ML pipelines</h3>
+              <h3>Clinical data platforms</h3>
               <p>
-                Machine learning models for genomic, proteomic, and clinical
-                data. Variant calling, sequence analysis, protein structure
-                prediction, deployed for production research.
+                FHIR tooling, validation engines, and data management systems
+                for research teams coordinating clinical data across
+                institutions and studies.
               </p>
             </article>
             <article class="service-box">
-              <h3>Bioinformatics platforms</h3>
+              <h3>Bioinformatics infrastructure</h3>
               <p>
                 End-to-end systems for managing and analyzing biological data at
                 research scale. Architecture your team can operate.
               </p>
             </article>
             <article class="service-box">
-              <h3>Research software</h3>
+              <h3>LLM integrations</h3>
               <p>
-                Custom applications, visualizations, and interfaces that make
-                complex biological data accessible to researchers.
+                Language models applied to genomic and clinical data.
+                Annotation, literature synthesis, structured extraction.
+                Deployed for production research.
               </p>
             </article>
           </div>
         </section>
 
-        <!-- ── Abstract Visualization ── -->
-        <section class="viz-section" id="viz">
-          <svg
-            class="abstract"
-            viewBox="0 0 1000 400"
-            fill="none"
-            aria-hidden="true"
-          >
-            <defs>
-              <filter id="hs">
-                <feDropShadow
-                  dx="4"
-                  dy="4"
-                  stdDeviation="0"
-                  flood-color="#3a3535"
-                  flood-opacity="1"
-                />
-              </filter>
-              <filter id="hs-sm">
-                <feDropShadow
-                  dx="2"
-                  dy="2"
-                  stdDeviation="0"
-                  flood-color="#3a3535"
-                  flood-opacity="1"
-                />
-              </filter>
-            </defs>
+        <!-- ── Case Studies ── -->
+        <section class="case-studies">
+          <h2>Recent work</h2>
 
-            <!-- Soft flowing curves -->
-            <path
-              class="curve c1"
-              d="M -20,200 C 150,40 350,20 500,200 C 650,380 850,320 1020,150"
-            />
-            <path
-              class="curve c2"
-              d="M -20,260 C 120,400 320,380 500,210 C 680,20 880,60 1020,240"
-            />
-            <path
-              class="curve c3"
-              d="M -20,130 C 200,130 380,340 560,260 C 740,180 860,90 1020,300"
-            />
-            <path
-              class="curve c4"
-              d="M -20,320 C 100,200 280,180 440,280 C 600,380 780,250 1020,100"
-            />
+          <!-- Case 1: FHIR resource manager -->
+          <div class="case-split">
+            <div class="case-visual">
+              <img src="/public/svg/fhir-pipeline.svg" alt="" aria-hidden="true" />
+            </div>
+            <div class="case-content">
+              <h3>FHIR resource manager</h3>
+              <p>
+                A pediatric research consortium needed to coordinate clinical
+                data across multiple studies and institutions. Releases were
+                manual, validation was inconsistent, and there was no version
+                history when things went wrong.
+              </p>
+              <p>
+                We built a platform for uploading, validating, versioning, and
+                releasing FHIR resources to servers. Built-in version control
+                tracks every change with full rollback support. Data freezes
+                create immutable snapshots before major releases. A full API
+                lets bioinformatics teams automate their pipelines.
+              </p>
+              <p>
+                Studies now deploy to multiple FHIR servers with one-click
+                releases and reviewers always see the same data.
+              </p>
+            </div>
+          </div>
 
-            <!-- Connecting lines -->
-            <g class="conns">
-              <line x1="190" y1="150" x2="500" y2="200" />
-              <line x1="500" y1="200" x2="790" y2="200" />
-              <line x1="340" y1="105" x2="190" y2="150" />
-              <line x1="640" y1="155" x2="790" y2="200" />
-              <line x1="280" y1="265" x2="190" y2="150" />
-              <line x1="860" y1="130" x2="790" y2="200" />
-              <line x1="120" y1="300" x2="190" y2="150" />
-              <line x1="870" y1="310" x2="790" y2="200" />
-            </g>
-
-            <!-- Pastel hub nodes -->
-            <rect
-              x="486"
-              y="186"
-              width="28"
-              height="28"
-              class="hub-sq orange"
-              filter="url(#hs)"
-            />
-            <rect
-              x="176"
-              y="136"
-              width="24"
-              height="24"
-              class="hub-sq blue"
-              filter="url(#hs)"
-            />
-            <rect
-              x="778"
-              y="188"
-              width="24"
-              height="24"
-              class="hub-sq yellow"
-              filter="url(#hs)"
-            />
-
-            <!-- Circle secondary nodes -->
-            <circle
-              cx="340"
-              cy="108"
-              r="9"
-              class="node-circ"
-              filter="url(#hs-sm)"
-            />
-            <circle
-              cx="640"
-              cy="158"
-              r="9"
-              class="node-circ"
-              filter="url(#hs-sm)"
-            />
-            <circle cx="280" cy="268" r="7" class="node-circ sm" />
-            <circle cx="860" cy="133" r="7" class="node-circ sm" />
-            <circle cx="120" cy="303" r="7" class="node-circ sm" />
-            <circle cx="600" cy="330" r="7" class="node-circ sm" />
-            <circle cx="870" cy="313" r="7" class="node-circ sm" />
-            <circle cx="400" cy="315" r="6" class="node-circ sm" />
-
-            <!-- Accent blocks -->
-            <rect x="100" y="335" width="55" height="8" class="block orange" />
-            <rect x="830" y="55" width="55" height="8" class="block blue" />
-            <rect x="420" y="360" width="65" height="8" class="block yellow" />
-
-            <!-- Small particles -->
-            <rect x="48" y="188" width="6" height="6" class="dot-sq" />
-            <rect x="138" y="53" width="6" height="6" class="dot-sq" />
-            <rect x="258" y="358" width="6" height="6" class="dot-sq" />
-            <rect x="418" y="43" width="6" height="6" class="dot-sq" />
-            <rect x="458" y="348" width="5" height="5" class="dot-sq" />
-            <rect x="568" y="33" width="6" height="6" class="dot-sq" />
-            <rect x="698" y="338" width="5" height="5" class="dot-sq" />
-            <rect x="738" y="68" width="6" height="6" class="dot-sq" />
-            <rect x="918" y="168" width="6" height="6" class="dot-sq" />
-            <rect x="948" y="318" width="5" height="5" class="dot-sq" />
-            <rect x="78" y="338" width="5" height="5" class="dot-sq" />
-            <rect x="328" y="28" width="5" height="5" class="dot-sq" />
-            <rect x="548" y="368" width="5" height="5" class="dot-sq" />
-            <rect x="838" y="358" width="5" height="5" class="dot-sq" />
-            <rect x="968" y="88" width="5" height="5" class="dot-sq" />
-            <rect x="28" y="98" width="5" height="5" class="dot-sq" />
-            <rect x="678" y="28" width="5" height="5" class="dot-sq" />
-          </svg>
-
-          <p class="viz-caption">
-            Ask a research question. Get analysis, visualizations, answers. We
-            build AI tools that understand your science and work the way your
-            team thinks.
-          </p>
+          <!-- Case 2: Clinical data validation -->
+          <div class="case-split case-split--reversed">
+            <div class="case-content">
+              <h3>Clinical data validation</h3>
+              <p>
+                A research team was manually comparing clinical records across
+                two systems field by field. Discrepancies in diagnosis codes,
+                date formats, and medication entries delayed every data release.
+              </p>
+              <p>
+                We built a validation platform that pulls FHIR resources and
+                registry data, runs configurable transform and comparison
+                pipelines per field, and queues mismatches for human review.
+                Fields that match are auto-approved. Reviewers only see what
+                needs attention. Match rate statistics track which fields can
+                be promoted from manual review to automatic over time.
+              </p>
+              <p>
+                Data releases that required weeks of manual reconciliation now
+                go through a structured review queue.
+              </p>
+            </div>
+            <div class="case-visual">
+              <img src="/public/svg/ehr-tracks.svg" alt="" aria-hidden="true" />
+            </div>
+          </div>
         </section>
 
-        <!-- ── Process ── -->
+        <!-- ── Process — Timeline ── -->
         <section id="how" class="how-it-works">
           <h2>How it works</h2>
-          <div class="process-grid">
-            <article class="process-card">
-              <span class="process-num">Phase 1</span>
-              <h3>Domain assessment</h3>
-              <p>
-                Map the research domain. Audit data types, existing tools, and
-                computational infrastructure. Define what needs to be built.
-              </p>
-            </article>
-            <article class="process-card">
-              <span class="process-num">Phase 2</span>
-              <h3>Embedded development</h3>
-              <p>
-                Work alongside your researchers. Production code, ML models,
-                platform integration. Ship working tools iteratively.
-              </p>
-            </article>
-            <article class="process-card">
-              <span class="process-num">Phase 3</span>
-              <h3>Transfer</h3>
-              <p>
-                Documentation, training, full handoff. Your team owns and
-                operates everything.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <!-- ── CTA ── -->
-        <section class="cta-section">
-          <div class="cta-box">
-            <h2>Need tools like this for your research?</h2>
-            <p>
-              Tell us about your data, your biological questions, and where your
-              current software falls short.
-            </p>
-            <a class="btn-chunky" href="mailto:hello@peyk.io">hello@peyk.io</a>
+          <div class="process-timeline">
+            <div class="process-step">
+              <div class="step-number" style="background: var(--orange)">
+                01
+              </div>
+              <div class="step-content">
+                <h3>Domain assessment</h3>
+                <p>
+                  Map the research domain. Audit data types, existing tools, and
+                  computational infrastructure. Define what needs to be built.
+                </p>
+              </div>
+            </div>
+            <div class="process-step">
+              <div class="step-number" style="background: var(--blue)">02</div>
+              <div class="step-content">
+                <h3>Embedded development</h3>
+                <p>
+                  Work alongside your researchers. Production code, platform
+                  builds, data tooling. Ship working software iteratively.
+                </p>
+              </div>
+            </div>
+            <div class="process-step">
+              <div class="step-number" style="background: var(--yellow)">
+                03
+              </div>
+              <div class="step-content">
+                <h3>Transfer</h3>
+                <p>
+                  Documentation, training, full handoff. Your team owns and
+                  operates everything.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
       </main>
+
+      <footer class="cta-section" id="contact">
+        <div class="cta-box">
+          <h2>Built for research teams</h2>
+          <p>
+            Clinical data platforms, validation systems, and research
+            infrastructure. Software that works the way your team works.
+          </p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
