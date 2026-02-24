@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Static landing page for Peyk",
   "scripts": {
-    "start": "python -m http.server"
+    "start": "pnpm dlx serve ."
   },
   "keywords": [
     "static-site",
